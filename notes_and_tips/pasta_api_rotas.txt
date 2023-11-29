@@ -1,0 +1,12 @@
+Todos os arquivos que eu criar dentro desta pasta, automaticamente se transformam em rotas da minha api(do backend) 
+
+## Rotas Dinâmicas:
+- http://localhost:3000/api/users // agora um nova pasta "/users" com o arquivo [index].ts é criada dentro da pasta /api
+- No arquivo [index].ts, o valor dentro do colchetes por ser qualquer nome
+
+- Agora consigo acessar esse parâmetro usando http://localhost:3000/api/users/1
+  ...console.log(request.query) => { id: '1' }, agora consigo pegar o parâmetro passado na url
+
+- É possível usar também o spread operator do js no nome do arquivo [...params].tsx
+  - agora consigo recuperar tudo que eu passar após a rota users/ http://localhost:3000/api/users/edit/1/bananas:
+  ...console.log(request.query) => { params: [ '2', 'edit', 'cafe' ] }

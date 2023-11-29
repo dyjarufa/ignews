@@ -1,0 +1,19 @@
+FaunaDB é um banco de dados serveless
+
+yarn add faunadb
+
+Aplicações Serverless:
+=====================
+
+-	Cada rota da aplicação será executada em um ambiente isolado
+
+-	Quando uma rota da aplicação for acessada, ao invés dessa rota ser executada a partir de um servidor node.js(exemplo: backend) 	que 	fica ligado 24hs, só no momento que a rota é acessada será instanciada uma mini máquina virtual(ex: cloud provider aws-dinamoDB, google, azure), executa uma função, retorna o resulta e então essa rota é "deletada"
+
+-	Toda a comunicação com o faunaDB será via protocolo HTTP então ser torna mais performático (Ou outro protocolo que não precise  manter um conexão aberta com o BD)
+
+-	CMS (Content Management System): Painel de administração para cadastro de informações(dados), e servir essas informações através de api's
+
+-	Os dados cadastrados no CMS são consumidos via json pela  aplicação front-end (ex: ReactJS)
+
+-	OAuth é um padrão de autenticação, metodologia de autenticação. / Ex: Ao se autenticar na conta do Github, podemos manter um estado de autenticação do usuário.
+

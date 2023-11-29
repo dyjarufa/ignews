@@ -1,0 +1,15 @@
+// Para realizar integração com os conteúdos criado no prismic, criar os seguinte arquivo e instalações:
+
+site: https://prismic.io/docs/technologies/react
+
+# pacote do prismic para integrar com o prismic:
+  cirar arquivo prismic.ts em /services:
+
+  yarn add @prismicio/client@5.1.1
+
+
+
+// arquivo prismic.ts:
+
+
+

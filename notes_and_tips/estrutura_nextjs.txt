@@ -1,0 +1,17 @@
+- Cada arquivo criado dentro da pasta /pages, automaticamente vira uma rota,
+  com exceção do arquivo _app.js e index.js
+
+- CSS Scoped module: o next tem suporte nativo para o css, todo arquivo que 
+  termina com .module.css
+  Deve ser iniciado com uma classe ou id
+
+- O arquivo _App será o arquivo principal que fica por volta de todos os componentes
+  ele é recarregado toda vez que o usuário muda de tela.
+  Quando existe a necessidade de criar uma configuração (ex: fonte externa) ou seja criar uma única vez,
+  preciso criar o arquivo _document
+
+- _document funciona de forma semelhante ao _App mas é carregado uma única vez
+  Ele é um componente ReactJS
+  ele é o único componente do NextJs que é criado em formato de classe
+
+

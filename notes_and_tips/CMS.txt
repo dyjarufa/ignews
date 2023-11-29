@@ -1,0 +1,36 @@
+JAMstack
+
+=> JavaScript
+=> API
+=> Markup
+
+* criação de aplicações completas sem depender de um backend estruturado
+
+----------------------------------------------------------------
+
+=> CMS (Content management system)
+  - Ganha um painel de administração pronto
+    - wordpress
+    X Drupal - não são mais usados
+    X Joomla
+    - Magento - usado para E-commerce
+
+=> Headless CMS (Painel de administração + API HTTP + GraphQL, SDK)
+  - Tem um painel de administração, todos os dados são servidos através de uma api, que por sua vez podem ser uma api HTTP, ou GraphQL ou até mesmo uma SDK
+
+  - É um CMS porém, não possui a parte visual para quem vai consumir o conteúdo, so existe a parte visual do painel de administração
+
+  - Strapi  
+  - Ghost (Blog)
+  - Keystone
+
+  - GraphCMS
+  - Prismic CMS
+  - Contentful
+
+  - Shopfy
+  - Saleor
+
+
+
+

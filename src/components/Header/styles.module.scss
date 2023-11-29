@@ -1,0 +1,58 @@
+.headerContainer {
+  height: 5rem;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.headerContent {  
+  max-width: 1120px;
+  height: 5rem; //ocupa toda a altura referente ao height do .headerContainer
+  margin: 0 auto; //alinha ao centro horizontalmente
+  padding: 0 2rem; //caso reduza a tela, menos que 1120px recebe um espaço na laterais
+
+  display: flex;
+  align-items: center;
+
+  nav {
+    margin-left: 5rem;
+    height: 5rem; // ocupa toda a altura para conseguir construir a borda amarelada ao selecionar o link
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 5rem; // ocupar a altura toda
+      line-height: 5rem; // com o line-height tem altura igual ao elemento que ocupada, consigo centralizar 
+      color: var(--gray-300);
+
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--white);
+      }
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &.active {
+        color: var(--white);
+        font-weight: bold;
+      }
+
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: var(--yellow-500);
+      }
+    }
+  }
+
+  button {
+    margin-left: auto; //o auto move o meu botão todo para esquerda
+  }
+} 

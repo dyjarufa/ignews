@@ -1,0 +1,5 @@
+Forma mais simples para app de pequeno porte:
+
+ - JWT(Storage) salvando em local storage ou cookies
+ - Next Auth (Social, Quando não há necessidade de armazenar as credenciais de acesso do usuário dentro do backend )
+    - O Next Auth não depende de backend. É possível fazer a autenticação usando apenas as apis root do próprio Next

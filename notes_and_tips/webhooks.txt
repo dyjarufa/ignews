@@ -1,0 +1,7 @@
+// Patterns usado para integração na web
+
+// webhook informa a nossa aplicação que alguma coisa ocorreu em uma lib de terceiros (ex: stripe)
+
+// Esses eventos que ocorreram nas aplicações de terceiro são feitas por rota http
+
+// CLI Stripe: Fica escutando os eventos de wehooks do stripe e encaminhando para o meu localhost

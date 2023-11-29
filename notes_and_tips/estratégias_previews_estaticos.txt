@@ -1,0 +1,30 @@
+// GetStaticPaths só existe em páginas que tem parametrização (ex: [slug].tsx)
+
+
+export const getStaticPaths: GetStaticPaths = async() => {
+    return {
+        paths: [ // no paths  passo quais slugs quero gerar de forma estática no momento da build
+            { params: { slug: "'axios---um-cliente-http-full-stack'" } },
+        ],
+        fallback: 'blocking',
+    }
+}
+
+
+===
+=== === === === === === === === === === === === === === === === === === === === =
+
+
+
+
+export const getStaticPaths: GetStaticPaths = async() => {
+    return {
+        paths: [], // quando o colchetes está vazesm, serão gerados conforme as pessoas vão acessando
+        fallback: 'blocking', // 
+    }
+}
+
+// a opção fallback pode receber 3 valores: treu, false ou  'blocking'
+// true => Se alguem tentar acessar um post que ainda não foi gerado de forma estática, quero que carregue o conteúdo pelo lado do browser
+// false => Se o post não foi gerado de maneira estática ainda, será gerado um erro 404.
+// blocking => Quando tenta acessar um conteúdo que ainda não foi gerado de forma estática, ele vai tentar carregar esse conteúdo no lado do server pelo GetStaticServer
